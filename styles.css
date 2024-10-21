@@ -139,7 +139,7 @@ main{
 }
 
 .playing-zone__bottom {
-  position: relative; /* Adjust position if needed */
+  position: relative;
   height: 40%;
 }
 
