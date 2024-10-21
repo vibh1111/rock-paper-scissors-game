@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,7 +9,7 @@
   overflow-y: hidden;
 }
 
-:root{
+:root {
   --dark-green: #004429;
   --gray: #656565;
   --yellow: #FFD600;
@@ -17,32 +17,27 @@
   --green: #8CC461;
   --white: #FFF;
   --inner-grren: #1da82b;
-  --mid-green:#1da82b90;
-  --outer-green:#2E9A2563;
+  --mid-green: #1da82b90;
+  --outer-green: #2E9A2563;
 }
 
-/* body{
-  position: relative;
-} */
-
-.main-screen{
+.main-screen {
   width: 100vw;
   height: 100vh;
   background: var(--green);
   color: var(--white);
   position: relative;
-  /* display: none; */
 }
 
 /* Scoreboard */
-header{
+header {
   display: flex;
   justify-content: center;
   width: full;
   margin-top: 4%;
 }
 
-.scoreBoard{
+.scoreBoard {
   width: 55%;
   border: 2px solid var(--white);
   border-radius: 1rem;
@@ -52,40 +47,38 @@ header{
   justify-content: space-between;
 }
 
-h1{
+h1 {
   letter-spacing: 4px;
 }
 
-.display-score{
+.display-score {
   display: flex;
   gap: 25px;
   width: 35%;
 }
 
-
-.scoreCount{
+.scoreCount {
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 50% ;
+  width: 50%;
   background-color: var(--white);
   border-radius: 0.5rem;
   color: var(--gray);
-  text-transform:uppercase;
+  text-transform: uppercase;
   letter-spacing: 1.7px;
   padding: 5px;
 }
 
-.scoreComp, .scorePlayer{
+.scoreComp, .scorePlayer {
   justify-self: flex-end;
   font-size: 55px;
   font-weight: 600;
   color: var(--black);
 }
 
-
 /* Game */
-main{
+main {
   display: flex;
   justify-content: center;
   width: full;
@@ -94,7 +87,7 @@ main{
 }
 
 /* playing zone */
-.playing-zone{
+.playing-zone {
   height: full;
   width: 50%;
   display: flex;
@@ -103,10 +96,9 @@ main{
   justify-content: center;
   gap: 20px;
   position: relative;
-  /* display: none; */
 }
 
-.playing-zone__top{
+.playing-zone__top {
   display: flex;
   justify-content: space-between;
   width: 50%;
@@ -126,15 +118,15 @@ main{
   height: 5%;
 }
 
-#line3{
-  left:34%;
+#line3 {
+  left: 34%;
   top: 35%;
   width: 13%;
 }
 
-#line2{
-  left:53%;
-  top: 35% ;
+#line2 {
+  left: 53%;
+  top: 35%;
   width: 13%;
 }
 
@@ -152,25 +144,23 @@ main{
   width: 150px;
   height: 150px;
   border: none;
-
 }
 
-.item{
+.item {
   cursor: pointer;
   border-radius: 50%;
   z-index: 2;
 }
 
-#rock{
+#rock {
   background-image: url("images/Group\ 2\ \(1\).png");
-
 }
 
-#scissor{
-  background-image: url("./images/Group\ 3.png")
+#scissor {
+  background-image: url("./images/Group\ 3.png");
 }
 
-#paper{
+#paper {
   background-image: url("./images/Group\ 1.png");
 }
 
@@ -190,25 +180,25 @@ main{
 .result {
   display: flex;
   flex-direction: column;
-  gap:10px;
+  gap: 10px;
   align-items: center;
   text-align: center;
   width: 30%;
 }
 
-.result-text{
+.result-text {
   font-size: 2rem;
   font-weight: 600;
   letter-spacing: 4px;
 }
 
-.sub-text{
+.sub-text {
   font-size: 1.2rem;
   font-weight: 500;
   letter-spacing: 2px;
 }
 
-#lost-text, #tie-text, .replayBtn{
+#lost-text, #tie-text, .replayBtn {
   display: none;
 }
 
@@ -217,14 +207,14 @@ main{
   background-color: var(--white);
   border-radius: 5px;
   height: 2rem;
-  color:var(--gray);
+  color: var(--gray);
   font-size: 0.8rem;
   letter-spacing: 1.5px;
   width: 70%;
   cursor: pointer;
 }
 
-.side{
+.side {
   display: flex;
   flex-direction: column;
   height: 70%;
@@ -242,35 +232,28 @@ main{
   margin-bottom: 2%;
 }
 
-#user-rock, #pc-rock{
+#user-rock, #pc-rock {
   background-image: url("images/Group\ 2\ \(1\).png");
 }
 
-#user-scissor, #pc-scissor{
+#user-scissor, #pc-scissor {
   background-image: url("/images/Group\ 3.png");
   display: none;
-
 }
 
-#user-paper, #pc-paper{
+#user-paper, #pc-paper {
   background-image: url("/images/Group\ 1.png");
   display: none;
 }
 
-.green-background{
+.green-background {
   border: none;
-  box-shadow:
-  0 0 0 10px var(--inner-grren) inset, 
-  0 0 0 10px var(--inner-grren), 
-  0 0 0 25px var(--mid-green), 
-  0 0 0 40px var(--outer-green);
+  box-shadow: 0 0 0 10px var(--inner-grren) inset, 0 0 0 10px var(--inner-grren), 0 0 0 25px var(--mid-green), 0 0 0 40px var(--outer-green);
   border-radius: 50%;
 }
 
-
-
 /* Rules Styling */
-.cross{
+.cross {
   background-image: url("./images/redbg.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -288,7 +271,7 @@ main{
   display: none;
 }
 
-.rules{
+.rules {
   background-color: var(--dark-green);
   color: var(--white);
   height: 44%;
@@ -323,7 +306,6 @@ main{
 }
 
 .rules-list > div {
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -331,12 +313,12 @@ main{
   gap: 1rem;
 }
 
-.yellow-pointer{
+.yellow-pointer {
   width: 10%;
 }
 
 /* Winner Screen */
-.winner-screen{
+.winner-screen {
   width: 100vw;
   height: 100vh;
   background: var(--green);
@@ -349,7 +331,7 @@ main{
   display: none;
 }
 
-.trophy{
+.trophy {
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -360,17 +342,17 @@ main{
   width: 100%;
 }
 
-.stars{
+.stars {
   position: absolute;
 }
 
-.hurrayMsg{
+.hurrayMsg {
   font-size: 5rem;
   letter-spacing: 9px;
   height: 15%;
 }
 
-.winMsg{
+.winMsg {
   font-size: 2.5rem;
   letter-spacing: 4px;
   height: 10%;
@@ -381,7 +363,7 @@ main{
   background-color: var(--white);
   border-radius: 5px;
   height: 2.5rem;
-  color:var(--gray);
+  color: var(--gray);
   font-size: 0.8rem;
   letter-spacing: 1.5px;
   width: 12rem;
@@ -389,16 +371,14 @@ main{
   cursor: pointer;
 }
 
-
 /* Button Styling */
-
-footer{
+footer {
   position: fixed;
   bottom: 2%;
   right: 2%;
 }
 
-footer > button{
+footer > button {
   border: 2px solid var(--white);
   background: transparent;
   width: 7rem;
@@ -412,6 +392,66 @@ footer > button{
   cursor: pointer;
 }
 
-.nextBtn{
-  display: none;
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1024px) {
+  .scoreBoard, .playing-zone, .result-zone {
+    width: 80%;
+  }
+
+  .item, .side-icon {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .scoreBoard, .playing-zone, .result-zone {
+    width: 90%;
+  }
+
+  .item, .side-icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .winnerPlayBtn {
+    width: 10rem;
+    height: 2rem;
+  }
+
+  .result-text {
+    font-size: 1.5rem;
+  }
+
+  .winMsg {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .scoreBoard, .playing-zone, .result-zone {
+    width: 100%;
+  }
+
+  .item, .side-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .winnerPlayBtn {
+    width: 8rem;
+    height: 1.8rem;
+  }
+
+  .result-text {
+    font-size: 1rem;
+  }
+
+  .winMsg {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
 }
